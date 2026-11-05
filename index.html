@@ -694,7 +694,7 @@ const FREE_DELIVERY_OVER = 600, DELIVERY_FEE = 49;
 
 /* ---------- drink art ---------- */
 let uid = 0;
-const SNACK_ICON = {grilled:'🧀',sando:'🥪',cookies:'🍪',pastry:'🥐',cinroll:'🥮'};
+const SNACK_ICON = {grilled:'🧀',sando:'🥪',cookies:'🍪',cinroll:'🥮'};
 function itemArt(i,o){ return i.cat==='snacks' ? `<span style="font-size:5rem;line-height:1;display:block;text-align:center;padding:2.2rem 0" aria-hidden="true">${SNACK_ICON[i.id]||'🍪'}</span>` : cupSVG(o||i.cup); }
 function cupSVG(o){
   const id = 'q'+(uid++);
@@ -730,7 +730,7 @@ function cupSVG(o){
 /* ---------- menu data ---------- */
 const GREEN = '#5c8d1c';
 const ITEMS = [
-  {id:'ube',cat:'weekend',name:'Ube My Love',desc:'Our weekend drop. Purple ube cream over green matcha. Saturday and Sunday only.',price:240,bg:'#dcd0ff',cup:{bottom:'#d8c2f0',mid:'#6f9a27',top:'#c9a8ea'}},
+  {id:'ube',cat:'weekend',name:'Ube My Love',desc:'Our weekend drop. Purple ube cream over green matcha. Saturday and Sunday only.',price:245,bg:'#dcd0ff',cup:{bottom:'#d8c2f0',mid:'#6f9a27',top:'#c9a8ea'}},
 
   {id:'classic',cat:'whims',name:'The Classic Club',desc:'Our signature. Smooth, premium ceremonial matcha whisked over oat milk and our signature sweetener.',price:230,bg:'#c9f0b4',cup:{bottom:'#f1ead2',mid:'#b4cf6a',top:GREEN}},
   {id:'berry',cat:'whims',name:'Berry First Matcha',desc:'Bold ceremonial matcha over oat milk and strawberry puree. New to matcha? Try this.',price:240,bg:'#ffd0e2',cup:{bottom:'#d8467a',mid:'#c4cf7e',top:GREEN}},
@@ -756,7 +756,6 @@ const ITEMS = [
   {id:'sando',cat:'snacks',name:'Tamago Sando',desc:'Soft, fluffy Japanese egg sandwich.',price:89,bg:'#fff2cf',cup:{bottom:'#f7ecd2',mid:'#f4d27a',top:'#efe1bd',noStraw:true}},
   {id:'grilled',cat:'snacks',name:'Grilled Cheese Sandwich',desc:'Toasted golden, with melty, stretchy cheese.',price:120,bg:'#ffe9a8',cup:{bottom:'#f1d28a',mid:'#e0b85a',top:'#c99a3c',noStraw:true}},
   {id:'cookies',cat:'snacks',name:'Homebaked Cookies',desc:'Baked in house, soft in the middle.',price:85,bg:'#ead3bd',cup:{bottom:'#c99a6a',mid:'#a87445',top:'#6b4528',noStraw:true}},
-  {id:'pastry',cat:'snacks',name:'Pastry of the Day',desc:'Ask us what came out of the oven today.',price:65,bg:'#ffe9a8',cup:{bottom:'#f1d28a',mid:'#e0b85a',top:'#c99a3c',noStraw:true}},
   {id:'cinroll',cat:'snacks',name:'Special Cinnamon Rolls',desc:'Warm, gooey and glazed.',price:110,bg:'#ffd0e2',cup:{bottom:'#e8c9a8',mid:'#c99a6a',top:'#fff0d8',noStraw:true}},
   {id:'foam',cat:'addon',name:'Sea Salt Cream Cold Foam',desc:'A velvety, savory sweet cream cloud on top.',price:30,bg:'#ffd0e2',cup:{bottom:'#b4cf6a',mid:'#8fb83e',top:GREEN,foam:true,noStraw:true}},
   {id:'oat',cat:'addon',name:'Oat Milk Upgrade',desc:'Barista grade oat milk.',price:35,bg:'#fff2cf',cup:{bottom:'#f7ecd2',mid:'#efe1bd',top:'#e6d4a6',noStraw:true}},
@@ -1048,7 +1047,7 @@ if(BEHOLD_FEED_ID){
 const POSTERS = [
   ['our-matcha-club','Our Matcha Club'],['zero-drama','Zero drama'],['classic-club','The Classic Club'],['berry-first','Berry First Matcha'],['sunny-mango','Sunny Mango Matcha'],
   ['star-girl','Star Girl Matcha'],['good-vibes','Good Vibes Matcha'],['velvet-hoji','Velvet Hoji'],['cafe-latte','Cafe Latte'],['mocha-loka','Mocha Loka'],
-  ['oat-white','Oat White'],['mango-espresso-tonic','Mango Espresso Tonic'],['choco-loko','Choco Loko'],['tamago-sando','Tamago Sando'],['grilled-cheese','Grilled Cheese Sandwich'],['cookies','Homebaked Cookies'],['pastry-of-the-day','Pastry of the Day']
+  ['oat-white','Oat White'],['mango-espresso-tonic','Mango Espresso Tonic'],['choco-loko','Choco Loko'],['tamago-sando','Tamago Sando'],['grilled-cheese','Grilled Cheese Sandwich'],['cookies','Homebaked Cookies']
 ];
 (function(){
   const fl = $('cflow'), tr = $('ctrack'), cap = $('cap3d');
